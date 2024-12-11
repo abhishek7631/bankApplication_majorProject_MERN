@@ -1,33 +1,28 @@
 const express = require("express");
+const {
+  getUserBalance,
+  getNotifications,
+  toggleNotifications,
+  chnagePassword,
+  changeTransactionPin,
+  getAllUsers,
+  logout,
+} = require("../controllers/user");
 
 const router = express.Router();
 
-router.get("/balance", (req, res) => {
-  res.status(200).json({ message: "This is get blance route" });
-});
+router.get("/balance", getUserBalance);
 
-router.get("/notifications", (req, res) => {
-  res.status(200).json({ message: "This is get notifications route" });
-});
+router.get("/notifications", getNotifications);
 
-router.post("/notifications/toggle", (req, res) => {
-  res.status(200).json({ message: "This is notifications toggle route" });
-});
+router.post("/notifications/toggle", toggleNotifications);
 
-router.post("/change-password", (req, res) => {
-  res.status(200).json({ message: "This is change password route" });
-});
+router.post("/change-password", chnagePassword);
 
-router.post("/change-pin", (req, res) => {
-  res.status(200).json({ message: "This is change pin route" });
-});
+router.post("/change-pin", changeTransactionPin);
 
-router.get("/users", (req, res) => {
-  res.status(200).json({ message: "This is get all users route" });
-});
+router.get("/users", getAllUsers);
 
-router.post("/logout", (req, res) => {
-  res.status(200).json({ message: "This is logout route" });
-});
+router.post("/logout", logout);
 
 module.exports = router;
