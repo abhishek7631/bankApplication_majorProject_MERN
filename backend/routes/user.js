@@ -8,21 +8,22 @@ const {
   getAllUsers,
   logout,
 } = require("../controllers/user");
+const protect = require("../middleware/auth");
 
 const router = express.Router();
 
-router.get("/balance", getUserBalance);
+router.get("/balance", protect, getUserBalance);
 
-router.get("/notifications", getNotifications);
+router.get("/notifications", protect, getNotifications);
 
-router.post("/notifications/toggle", toggleNotifications);
+router.post("/notifications/toggle", protect, toggleNotifications);
 
-router.post("/change-password", chnagePassword);
+router.post("/change-password", protect, chnagePassword);
 
-router.post("/change-pin", changeTransactionPin);
+router.post("/change-pin", protect, changeTransactionPin);
 
-router.get("/users", getAllUsers);
+router.get("/users", protect, getAllUsers);
 
-router.post("/logout", logout);
+router.post("/logout", protect, logout);
 
 module.exports = router;
