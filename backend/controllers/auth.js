@@ -3,7 +3,7 @@ const jwt = require("jsonwebtoken");
 const bcrypt = require("bcrypt");
 const nodemailer = require("nodemailer"); // To send OTP via email
 const crypto = require("crypto"); // To generate OTP
-const sendEmail = require("../utils/reasetEmail");
+const sendEmail = require("../utils/resetEmail");
 require("dotenv").config();
 
 // Create a nodemailer transporter (adjust the settings for your email service)
