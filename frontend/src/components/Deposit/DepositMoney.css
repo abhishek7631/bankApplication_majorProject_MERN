@@ -1,0 +1,19 @@
+/* DepositMoney.css */
+
+.deposit-money-container {
+  height: 100vh;
+  max-width: 400px; /* Limit the max width of the container */
+  margin: 0 auto; /* Center the form */
+}
+
+.deposit-money-container h2 {
+  color: #333; /* Heading color */
+}
+
+.deposit-money-container button {
+  width: 100%; /* Full-width button */
+}
+
+.deposit-money-container .alert {
+  text-align: center; /* Center the alert text */
+}
