@@ -1,0 +1,49 @@
+/* Balance Section */
+.profile-container {
+  height: 100vh;
+}
+.balance-card {
+  background: linear-gradient(135deg, #003366, #3366cc);
+  border-radius: 10px;
+  color: white;
+}
+
+.balance-amount {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.profile-image img {
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+}
+
+.phone-number {
+  border: none;
+  background-color: transparent;
+  color: white;
+  font-weight: bold;
+}
+
+/* Settings Section */
+.settings-card {
+  border: 1px solid #e0e0e0;
+  border-radius: 10px;
+}
+
+.setting-option p {
+  margin: 0;
+  color: #888;
+  font-size: 0.9rem;
+}
+
+.setting-link {
+  cursor: pointer;
+  color: #0056b3;
+  font-size: 1rem;
+}
+
+.setting-link:hover {
+  text-decoration: underline;
+}
