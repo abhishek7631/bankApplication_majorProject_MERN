@@ -1,0 +1,25 @@
+.MainNotification {
+  position: relative; /* Set relative to position children correctly */
+}
+
+.notification_icon {
+  cursor: pointer;
+  position: relative; /* Make the icon the reference point */
+  z-index: 1001; /* Ensure icon is above the notification */
+}
+
+.MainNotification .Notification {
+  height: 500px;
+  width: 20rem;
+  background-color: #4caf50;
+  color: white;
+  padding: 15px;
+  margin: 0; /* Remove margin to prevent offset */
+  border-radius: 5px;
+  position: absolute; /* Use absolute positioning */
+  top: 36px; /* Adjust based on the icon height */
+  right: 0; /* Align with the right edge of the icon */
+  z-index: 1000; /* Ensure it's below the icon */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Optional shadow for better visibility */
+  overflow-y: scroll;
+}

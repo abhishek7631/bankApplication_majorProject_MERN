@@ -1,0 +1,37 @@
+.navbar-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+}
+.navbar-links {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  color: purple;
+
+  width: 9rem;
+}
+
+#profile {
+  height: 2.6rem;
+  width: 2.6rem;
+  background-color: green;
+  border-radius: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  color: purple;
+}
+
+@media screen and (max-width: 768px) {
+  .navbar-links {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    color: purple;
+    width: 100%;
+  }
+}
