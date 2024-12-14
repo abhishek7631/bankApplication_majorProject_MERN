@@ -1,0 +1,48 @@
+.private-route-layout {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column; /* Adjust layout on smaller screens */
+}
+
+.content-area {
+  width: 100%;
+  padding: 0;
+}
+
+.sidebar-layout {
+  display: flex;
+  flex-wrap: wrap; /* Allow wrapping of elements on smaller screens */
+}
+
+.sidebar-layout > .sidebar-col,
+.sidebar-layout > .main-content-col {
+  padding: 0;
+  margin: 0;
+}
+
+.main-content {
+  width: 100%;
+  background-color: #e6e6e6;
+  display: flex;
+  flex-direction: column;
+}
+
+.main-content .Outlet {
+  flex-grow: 1;
+  width: 100%;
+  border: 2px solid black;
+  padding: 20px;
+  box-sizing: border-box;
+  overflow-y: auto; /* Allow scrolling for overflow */
+}
+
+@media screen and (max-width: 768px) {
+  .sidebar-layout {
+    flex-direction: column-reverse;
+  }
+  .main-content {
+    height: auto; /* Allow main content height to adjust dynamically */
+    overflow-y: visible; /* Avoid hidden overflow on mobile */
+  }
+}
