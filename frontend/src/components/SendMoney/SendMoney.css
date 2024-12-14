@@ -1,0 +1,19 @@
+/* SendMoney.css */
+
+.send-money-container {
+  height: 100vh;
+  max-width: 400px; /* Limit the max width of the container */
+  margin: 0 auto; /* Center the form */
+}
+
+.send-money-container h2 {
+  color: #333; /* Heading color */
+}
+
+.send-money-container button {
+  width: 100%; /* Full-width button */
+}
+
+.send-money-container .alert {
+  text-align: center; /* Center the alert text */
+}
