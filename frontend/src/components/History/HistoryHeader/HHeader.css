@@ -1,0 +1,32 @@
+.main-header {
+  font-family: Arial, sans-serif;
+  width: 90%;
+  margin: auto;
+}
+
+.transaction-info {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.transaction-item h6 {
+  font-weight: 600;
+  color: #333;
+}
+
+.indicator {
+  width: 10px;
+  height: 10px;
+  border-radius: 2px;
+}
+
+.icon {
+  font-size: 1.5rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.icon:hover {
+  background-color: #e2e6ea;
+}

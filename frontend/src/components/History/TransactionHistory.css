@@ -1,0 +1,26 @@
+.transaction-history-container {
+  padding: 20px;
+}
+
+.transaction-card {
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+
+.transaction-card:hover {
+  transform: scale(1.02);
+}
+
+.transaction-info {
+  padding: 10px;
+  margin-top: 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+@media (max-width: 768px) {
+  .transaction-card {
+    margin: 10px 0; /* Add vertical spacing on smaller screens */
+  }
+}
