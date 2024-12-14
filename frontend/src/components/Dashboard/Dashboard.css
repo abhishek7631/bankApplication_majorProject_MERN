@@ -1,0 +1,17 @@
+/* Balance Section */
+.balance-card {
+  background: linear-gradient(135deg, #003366, #3366cc);
+  border-radius: 10px;
+}
+
+.balance-amount {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+/* Transaction Item */
+.transaction-item {
+  background-color: #ffffff;
+  border: 1px solid #e0e0e0;
+  border-radius: 10px;
+}
