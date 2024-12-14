@@ -1,0 +1,49 @@
+/* Background styling with placeholder for URL */
+.home-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: url("https://img.freepik.com/free-vector/digital-rupee-background-with-binary-number-codes_1017-36444.jpg?t=st=1733830312~exp=1733833912~hmac=c3380a770acfc9bff86089c4f4a82a3e6342d58b18074fbd3f4c90d5fe9aff6a&w=996")
+    no-repeat center center/cover;
+  animation: fadeIn 2s ease-in-out;
+}
+
+/* Heading styling */
+.home-heading {
+  font-size: 3rem;
+  font-weight: bold;
+  text-align: center;
+  color: #fff;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+  margin-bottom: 2rem;
+}
+
+/* Button container and button styling */
+.button-container {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.home-button {
+  padding: 0.75rem 1.5rem;
+  font-size: 1.25rem;
+  border-radius: 5px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.home-button:hover {
+  transform: scale(1.1);
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Animation for fade-in effect */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
