@@ -1,0 +1,87 @@
+/* Sidebar.css */
+
+/* General Sidebar Styles */
+.sidebar {
+  height: 100vh;
+  width: 250px; /* Adjust width as needed */
+  background-color: #f9fafb;
+  margin: 0;
+}
+
+.sidebar ul {
+  margin-top: 6px;
+  padding: 0; /* Remove default padding */
+}
+
+.sidebar ul li {
+  width: 100%; /* Make list items full width */
+  padding-left: 2rem;
+  line-height: 2.4rem;
+}
+
+/* Mobile Styles */
+.sidebar-mobile {
+  height: 6rem;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  background-color: #f9fafb; /* Ensure consistency */
+}
+
+.sidebar-mobile ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 94%;
+  padding: 2px;
+}
+
+.sidebar-mobile ul li {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0 5px; /* Add margin for spacing */
+}
+
+/* Tablet Styles */
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  .sidebar {
+    width: 200px; /* Adjust for tablet width */
+  }
+  .sidebar ul li {
+    line-height: 2rem; /* Slightly reduce height for better fit */
+  }
+}
+
+/* Mobile Styles */
+@media screen and (max-width: 768px) {
+  .sidebar-mobile {
+    height: 6rem;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .sidebar-mobile ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 94%;
+    padding: 2px;
+  }
+
+  .sidebar-mobile ul li {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 5px; /* Space between items */
+  }
+}
