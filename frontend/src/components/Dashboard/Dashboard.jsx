@@ -166,4 +166,3 @@ const TransactionItem = ({ type, amount, date, userName, status }) => {
 export default Dashboard;
 
 //extra code
-//extra code
